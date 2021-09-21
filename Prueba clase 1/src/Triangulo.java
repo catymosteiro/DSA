@@ -1,4 +1,4 @@
-package main.java.Principal;
+
 public class Triangulo extends Figura {
     private double base;
     private double altura;

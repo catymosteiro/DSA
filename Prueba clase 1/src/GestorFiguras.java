@@ -1,5 +1,4 @@
-package main.java.Principal;
-
+import java.util.Arrays;
 public class GestorFiguras {
 
     public static double Suma(Figura[] i) {
@@ -7,24 +6,12 @@ public class GestorFiguras {
         for (Figura f : i) {
             resultado = resultado + f.area();
         }
-        System.out.println("La suma de areas es de:" + resultado);
+        System.out.println("La suma de areas es de: " + resultado);
         return resultado;
     }
 
     public static void Sort(Figura[] i) {
-        Figura [] Resultado = null;
-        int o = 0;
-        int Area1 = 0;
-        while (Area1< 1000) {
-            for (Figura f : i) {
-                if (f.area() < Area1) {
-                    Resultado[o] = f;
-                    o = o + 1;
-                }
-            }
-            Area1 = Area1 + 1;
-        }
-        System.out.print("El orden de las figuras de menor a mayor area es:" + Resultado);
+        Arrays.sort (i);
     }
 
     public static void main(String[] args) {
