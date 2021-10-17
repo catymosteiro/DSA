@@ -22,5 +22,9 @@ public class GestorFiguras {
         Figura [] vector ={rectangulo, triangulo, cuadrado, circulo} ;
         GestorFiguras.Suma(vector);
         GestorFiguras.Sort(vector);
+        System.out.println(vector[0].area());
+        System.out.println(vector[1].area());
+        System.out.println(vector[2].area());
+        System.out.println(vector[3].area());
     }
 }
